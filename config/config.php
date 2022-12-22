@@ -4,7 +4,7 @@
 	  private const DBHOST = 'localhost';
 	  private const DBUSER = 'root';
 	  private const DBPASS = '';
-	  private const DBNAME = 'restful';
+	  private const DBNAME = 'oop-pdo-db';
 	  // Data Source Network
 	  private $dsn = 'mysql:host=' . self::DBHOST . ';dbname=' . self::DBNAME . '';
 	  // conn variable
@@ -32,7 +32,7 @@
 
 	  // JSON Format Converter Function
 	  public function message($content, $status) {
-	    return json_encode(['message' => $content, 'error' => $status]);
+	    return json_encode(['message' => $content, 'status' => $status]);
 	  }
 	}
 

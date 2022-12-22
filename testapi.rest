@@ -1,0 +1,47 @@
+###
+# GET 
+# FETCH all users
+GET http://localhost/aptech/oop-pdo-api/user_api/users.php
+
+
+
+
+
+###
+# GET 
+# FETCH a single user
+GET http://localhost/aptech/oop-pdo-api/user_api/users.php?id=2
+
+
+
+
+
+###
+# POST : Insert a user
+POST http://localhost/aptech/oop-pdo-api/user_api/users.php
+
+{
+    "name": "Prof7 Silas",
+    "email": "prof7@gmail.com",
+    "phone": "08012345677"
+}
+
+
+
+
+
+###
+# PUT : Update a user
+PUT http://localhost/aptech/oop-pdo-api/user_api/users.php?id=11
+
+{
+    "phone": "423456752"
+}
+
+
+
+
+
+###
+# DELETE : Update a user
+DELETE http://localhost/aptech/oop-pdo-api/user_api/users.php?id=16
